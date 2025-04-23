@@ -41,6 +41,9 @@ function App() {
           </li>
         ))}
       </ul>
+      {tarefas.length === 0 && (
+        <p className="sem-tarefas">Você ainda não criou nenhuma tarefa.</p>
+      )}
     </div>
   );
 }
